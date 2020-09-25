@@ -10,4 +10,4 @@ python:
 
 script:
 
- - python -m unittest SSW567-HW4a
+ - python -m unittest TestGithubAPI567
