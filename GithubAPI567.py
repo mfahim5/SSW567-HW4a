@@ -1,4 +1,5 @@
 import requests
+requests.Session()
 import json 
 
 def githubAPI(username):
