@@ -4,7 +4,7 @@ python:
 
  - "3.5"
  
- install: "pip install pip==9.0.3 -r requirements.txt"
+ install: "-pip install requests"
 
 
 # command to run tests
