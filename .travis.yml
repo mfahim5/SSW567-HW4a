@@ -2,13 +2,13 @@ language: python
 
 python:
 
-  - "3.5"
+ - "3.8"
 
 install:
-
   - pip install requests
 
 
-script:
+# command to run tests
 
-  - python -m unittest TestGithubAPI567.py
+script:
+ - python -m unittest TestGithubAPI567
