@@ -1,10 +1,10 @@
-import pip._vendor.requests
+import requests
 import json 
 
 def githubAPI(username):
     
     try:
-        result= pip._vendor.requests.get("https://api.github.com/users/" +username+"/repos")
+        result= requests.get("https://api.github.com/users/" +username+"/repos")
     except (TypeError):
         return "Github account must be written correctly"
 
@@ -13,7 +13,7 @@ def githubAPI(username):
         print("No Repos")
         return False
     for i in result:
-        resultRepo= pip._vendor.requests.get(i['commits_url'].split("{")[0])
+        resultRepo= requests.get(i['commits_url'].split("{")[0])
         resultRepo= resultRepo.json()
         print("Repo Name: " + i['name']+"\t Number of commits: "+str(len(resultRepo)))
     return True
