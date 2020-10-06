@@ -1,5 +1,6 @@
 import unittest
 from GithubAPI567 import githubAPI
+from unittest import mock
 
 class TestGithubAPI567(unittest.TestCase):
     def testWorkingUserInput(self):
